@@ -1,0 +1,6 @@
+---
+- hosts: hosts
+  tasks:
+    yum:
+      name: git
+      status: present
