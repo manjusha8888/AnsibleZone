@@ -1,0 +1,9 @@
+---
+- hosts: node
+  become: yes
+  tasks:
+    - name: stop tomcat service
+      service:
+        name: tomcat7
+        state: stopped
+        
